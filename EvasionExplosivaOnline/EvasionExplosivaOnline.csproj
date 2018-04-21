@@ -87,6 +87,8 @@
     <Compile Include="Assets\Medio.cs" />
     <Compile Include="Assets\Modelos\Personaje\Scripts\ControladorMovimientos.cs" />
     <Compile Include="Assets\entrando.cs" />
+    <Compile Include="Assets\limitante.cs" />
+    <Compile Include="Assets\pasar.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />

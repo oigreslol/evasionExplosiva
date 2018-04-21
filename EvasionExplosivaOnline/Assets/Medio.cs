@@ -10,6 +10,8 @@ public class Medio : MonoBehaviour
     public Transform posicionBalon;
     public GameObject pelota;
 
+    
+
     // Update is called once per frame
     void Update()
     {
@@ -26,24 +28,30 @@ public class Medio : MonoBehaviour
                     Debug.Log(transform.name);
                     posicionBalon = GameObject.Find(transform.name+ "/posicionAgarre").transform;
                     Debug.Log(transform.name);
-                    
+                    if (hit.transform.GetComponent<Rigidbody>())
+                    {
+                        Destroy(hit.transform.GetComponent<Rigidbody>());
+                    }
                     hit.transform.position = posicionBalon.position;
                     pelota = hit.transform.gameObject;
                     pelota.transform.parent = transform;
                     sePuedeCoger = false;
                     conBalon = true;
-                    //hit.transform.GetComponent<Rigidbody>().useGravity = false;
-                    //hit.transform.GetComponent<Rigidbody>().isKinematic = true;
+                    pelota.GetComponent<entrando>().lanzado = true;
                 }
             }
         }
         if (conBalon == true) {
-            if (Input.GetMouseButtonDown(0)) {
+            if (Input.GetMouseButtonDown(0))
+            {
                 pelota.transform.parent = GameObject.Find("Juego/Balones").transform;
                 pelota.AddComponent<Rigidbody>();
-                Vector3 pushDir = Camera.main.transform.position - pelota.transform.position;
-                pelota.GetComponent<Rigidbody>().AddForce(pushDir.normalized * 9);
+                Vector3 pushDir = Camera.main.transform.position;
+               // pelota.GetComponent<BoxCollider>().enabled = false;
+                pelota.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * 2000);
                 conBalon = false;
+                sePuedeCoger = false;
+                pelota.GetComponent<entrando>().lanzado = true;
             }
         }
         
