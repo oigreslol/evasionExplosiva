@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Balon
   - limitador
+  - balonCoger
+  - JugadorAzul
+  - JugadorRojo
+  - SpawnRojo
+  - SpawnAzul
   layers:
   - Default
   - TransparentFX

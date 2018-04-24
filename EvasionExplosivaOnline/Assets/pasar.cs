@@ -2,40 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class pasar : MonoBehaviour {
+public class pasar : Photon.MonoBehaviour
+{
 
-
-  //  GameObject pelota;
-
-    private void Start()
-    {
-        //pelota = transform.parent.gameObject;
-       /// Debug.Log(pelota.transform.name);
-    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Balon") {
-
-                Debug.Log("cambiando trigger");
-                transform.parent.GetComponent<BoxCollider>().isTrigger = true;
-                // other.gameObject.GetComponent<entrando>().lanzado = false;
-        }
-        else {
-            transform.parent.GetComponent<BoxCollider>().isTrigger = false;
-        }
-
-    
-    }
-/*
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Balon" && other.gameObject.GetComponent<entrando>().lanzado == true)
+        if (other.tag == "JugadorAzul")
         {
-            other.gameObject.GetComponent<entrando>().lanzado = false;
+            other.gameObject.transform.position = new Vector3(other.transform.position.x, other.transform.position.y, other.transform.position.z +1.5f);
         }
-    }*/
-
-
-
+        if (other.tag == "JugadorRojo")
+        {
+            other.gameObject.transform.position = new Vector3(other.transform.position.x, other.transform.position.y, other.transform.position.z - 1.5f);
+        }
+    }
 }

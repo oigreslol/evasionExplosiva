@@ -19,8 +19,18 @@ public class limitante : MonoBehaviour {
         personaje = GetComponent<Rigidbody>();
 	}
 
-    // Update is called once per frame
-    void FixedUpdate() {
-        personaje.position = new Vector3(Mathf.Clamp(personaje.position.x, boundery.xMin, boundery.xMax), 0f, Mathf.Clamp(personaje.position.z, boundery.zMin, boundery.zMax));
-	}
+
+    void FixedUpdate()
+    {
+        Vector3 pos = personaje.position;
+        Debug.Log("Posicion personaje: " + pos);
+
+        pos.x = Mathf.Clamp(pos.x, -0.013f, 0.1f);
+        Debug.Log("Poscion en x" + pos.x);
+        pos.y = Mathf.Clamp(pos.y, 0.2f, 0.3f);
+        Debug.Log("Posicion en y " + pos.y);
+        pos.z = Mathf.Clamp(pos.z, 0.2f, 0.3f);
+        Debug.Log("Posicion en z "+ pos.z);
+        personaje.position = pos;
+    }
 }

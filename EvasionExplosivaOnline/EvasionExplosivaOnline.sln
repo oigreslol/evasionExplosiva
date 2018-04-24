@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvasionExplosivaOnline", "E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvasionExplosivaOnline.Editor.Plugins", "EvasionExplosivaOnline.Editor.Plugins.csproj", "{46CA9EDC-2B6F-A544-5077-6E7C07680293}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvasionExplosivaOnline.Editor", "EvasionExplosivaOnline.Editor.csproj", "{CDCF55C5-6D1C-8C1B-DD0D-8B56459E40CB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{46CA9EDC-2B6F-A544-5077-6E7C07680293}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46CA9EDC-2B6F-A544-5077-6E7C07680293}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46CA9EDC-2B6F-A544-5077-6E7C07680293}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDCF55C5-6D1C-8C1B-DD0D-8B56459E40CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDCF55C5-6D1C-8C1B-DD0D-8B56459E40CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDCF55C5-6D1C-8C1B-DD0D-8B56459E40CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDCF55C5-6D1C-8C1B-DD0D-8B56459E40CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
