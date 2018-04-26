@@ -13,6 +13,7 @@ public class NetPlayer : MonoBehaviour {
             GameObject camera = GameObject.Find(transform.name + "/FirstPersonCharacter");
             GetComponent<Medio>().enabled = true;
             GetComponent<ponchar>().enabled = true;
+			GetComponent<agacharse>().enabled = true;
             GetComponent<CharacterController>().enabled = true;
             if (camera != null) {
                 camera.GetComponent<Camera>().enabled = true;

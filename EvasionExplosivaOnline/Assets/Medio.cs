@@ -9,7 +9,7 @@ public class Medio : Photon.MonoBehaviour
     public GameObject pelota;
     PhotonView pv;
     public string nombreBalon;
-
+	private int contador = 0;
     [Header("Estados")]
     [SerializeField]private bool conBalon = false;
     public bool sePuedeCoger = false;
@@ -55,7 +55,6 @@ public class Medio : Photon.MonoBehaviour
                  {
                      Destroy(hit.transform.GetComponent<Rigidbody>());
                  }
-                Debug.Log("Estoooooo1" + hit.transform.name);
                 pv.RPC("moverBalon", PhotonTargets.All, hit.transform.GetComponent<PhotonView>().viewID);
                 //hit.transform.parent.transform.position = posicionBalon.position;
                 //pelota = hit.transform.parent.transform.gameObject;
@@ -100,22 +99,24 @@ public class Medio : Photon.MonoBehaviour
     }
 
     [PunRPC]
-    void LanzarBalon()
-    {
-        if (Input.GetMouseButtonDown(0))
-                {
-                    pelota.transform.parent = null;
-                    pelota.AddComponent<Rigidbody>();
-                    Vector3 pushDir = Camera.main.transform.position;
-                    pelota.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward* 2000);
-                    conBalon = false;
-                    sePuedeCoger = false;
-                    pelota.GetComponentInChildren<entrando>().lanzado = true;
-                    pelota.GetComponentInChildren<entrando>().fueLanzada = true;
-                    pelota.GetComponentInChildren<entrando>().tocoPiso = false;
-                    nombreBalon = null;
-                    //pv.RPC("Medio",PhotonTargets.All);
-                }
+    void LanzarBalon(){
+		if (Input.GetKey (KeyCode.Mouse0) && contador < 550) {
+			Debug.Log (contador);
+			contador += 10;
+		}else if(contador > 10){
+                pelota.transform.parent = null;
+                pelota.AddComponent<Rigidbody>();
+                Vector3 pushDir = Camera.main.transform.position;
+			pelota.GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward * contador * 10);
+                conBalon = false;
+                sePuedeCoger = false;
+                pelota.GetComponentInChildren<entrando>().lanzado = true;
+                pelota.GetComponentInChildren<entrando>().fueLanzada = true;
+                pelota.GetComponentInChildren<entrando>().tocoPiso = false;
+                nombreBalon = null;
+				contador = 0;
+                //pv.RPC("Medio",PhotonTargets.All);
+		}
     }
 }
         

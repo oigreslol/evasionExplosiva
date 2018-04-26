@@ -245,6 +245,7 @@ GameObject:
   - component: {fileID: 114234589824668320}
   - component: {fileID: 114145507009585596}
   - component: {fileID: 114846357696507568}
+  - component: {fileID: 114504597622306972}
   m_Layer: 0
   m_Name: JugadorEquipoRojo
   m_TagString: JugadorRojo
@@ -1008,6 +1009,20 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &114504597622306972
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1673651038999818}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df57041e985d94ed1922bb6ac533ea2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  personaje: {fileID: 0}
+  p: {fileID: 0}
+  activado: 0
 --- !u!114 &114620163247580946
 MonoBehaviour:
   m_ObjectHideFlags: 1
