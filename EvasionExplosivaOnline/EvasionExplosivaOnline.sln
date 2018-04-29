@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvasionExplosivaOnline.Plugins", "EvasionExplosivaOnline.Plugins.csproj", "{0F6105B0-C008-6084-D1C6-5F2AF9C8DB97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvasionExplosivaOnline", "EvasionExplosivaOnline.csproj", "{F997E84E-CCED-CD74-42BD-E67C780624BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvasionExplosivaOnline.Editor.Plugins", "EvasionExplosivaOnline.Editor.Plugins.csproj", "{46CA9EDC-2B6F-A544-5077-6E7C07680293}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvasionExplosivaOnline.Editor", "EvasionExplosivaOnline.Editor.csproj", "{CDCF55C5-6D1C-8C1B-DD0D-8B56459E40CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F6105B0-C008-6084-D1C6-5F2AF9C8DB97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F6105B0-C008-6084-D1C6-5F2AF9C8DB97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F6105B0-C008-6084-D1C6-5F2AF9C8DB97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F6105B0-C008-6084-D1C6-5F2AF9C8DB97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F997E84E-CCED-CD74-42BD-E67C780624BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F997E84E-CCED-CD74-42BD-E67C780624BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F997E84E-CCED-CD74-42BD-E67C780624BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F997E84E-CCED-CD74-42BD-E67C780624BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46CA9EDC-2B6F-A544-5077-6E7C07680293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46CA9EDC-2B6F-A544-5077-6E7C07680293}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46CA9EDC-2B6F-A544-5077-6E7C07680293}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46CA9EDC-2B6F-A544-5077-6E7C07680293}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDCF55C5-6D1C-8C1B-DD0D-8B56459E40CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDCF55C5-6D1C-8C1B-DD0D-8B56459E40CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDCF55C5-6D1C-8C1B-DD0D-8B56459E40CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDCF55C5-6D1C-8C1B-DD0D-8B56459E40CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
