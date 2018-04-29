@@ -11,6 +11,8 @@ TagManager:
   - JugadorRojo
   - SpawnRojo
   - SpawnAzul
+  - poder1
+  - poder2
   layers:
   - Default
   - TransparentFX
